@@ -1,0 +1,573 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar
+        (title: Text("Ensiklopedia Hadits")),
+        
+        body: ListView(
+          children: [
+          Row(children: <Widget>[
+            Container(
+                
+                margin: EdgeInsets.only(top: 10),
+                child: Text("Terakhir Dibaca",
+                    style: TextStyle(
+                        fontSize: 28,
+                       
+                        color: Colors.black,
+                        height: 2.0,
+                        fontWeight: FontWeight.bold))),
+            Container(
+                margin: EdgeInsets.only(top: 10, left: 200),
+                child: Text("more",
+                    textAlign: TextAlign.right,
+                    style: TextStyle(
+                      color: Colors.blue,
+                    )))
+          ]),
+          Container(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 10.0),
+              height: 300,
+              child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(30.0),                  
+                  children: <Widget>[
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.red, Colors.orange]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text(
+                                        "Barang siapa yang menceritakan hadist dariku, yang mana riwayat itu di duga",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("Hr.Muslim", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 10)),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.blue,                                             Colors.white]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text("UPGRADE PRO UNTUK LIHAT BANYAK ",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                   Text("Pro", style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white, fontSize: 10)),
+                                  ])),
+                             Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.pink, Colors.blue]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text("Unknown",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.purple,                                                Colors.white]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text(" Sama Masih Nunggu hadist",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                  ])),
+                          
+                          
+                        ]),
+                    
+                  ])),
+          Row(children: <Widget>[
+            Container(
+                margin: EdgeInsets.only(top: 10),
+                child: Text("Kutubut Tis'ah",
+                    style: TextStyle(
+                        fontSize: 28,
+                       
+                        color: Colors.black,
+                        height: 2.0,
+                        fontWeight: FontWeight.bold))),
+            Container(
+                margin: EdgeInsets.only(top: 10, left: 200),
+                child: Text("more",
+                    textAlign: TextAlign.right,
+                    style: TextStyle(
+                      color: Colors.blue,
+                    )))
+          ]),
+          Container(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 20.0),
+              height: 300,
+              child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(30.0),
+                  children: <Widget>[
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.network(
+                                        'https://s1.bukalapak.com/img/1870378952/large/Buku_RINGKASAN_SHAHIH_BUKHARI.jpg',
+                                        height: 100),
+                                    Text('Shahih Bukhari Muslim',
+                                        style: TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.bold)),
+                                    Text('7000 Hadist',
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            )),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.network(
+                                        'https://tse1.mm.bing.net/th?id=OIP.f0Vsy9YfpcFiCAPD9UhuJAHaHa&pid=Api&P=0&w=300&h=300',
+                                        height: 100),
+                                    Text('Shahih Muslim',
+                                        style: TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.bold)),
+                                     Text('5362 Hadits',
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            )),
+                                  ])),
+                           
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.network(
+                                        'https://ecs7.tokopedia.net/img/cache/700/product-1/2016/10/24/12005892/12005892_d08e576f-b1c3-4b66-a3f9-c025e51a56c3.jpg',
+                                        height: 100),
+                                    Text('Novel Dilan 1990',
+                                        style: TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.bold)),
+                                     Text('330 halaman',
+                                        style: TextStyle(
+                                            fontSize: 10,
+                                            )),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.network(
+                                        'https://ecs7.tokopedia.net/img/cache/700/product-1/2018/7/19/36012484/36012484_9b5aa5dc-3ee8-4d9f-9b61-352f725c6c25_700_984.jpg',
+                                        height: 100),
+                                    Text('Novel Dilan 1991',
+                                        style: TextStyle(
+                                            fontSize: 13,
+                                            fontWeight: FontWeight.bold)),
+                                    Text('344 Halaman',
+                                        style: TextStyle(
+                                            fontSize: 13,
+                                            )),
+                                  ])),
+                        ]),
+                  ])),
+          Row(children: <Widget>[
+            Container(
+                margin: EdgeInsets.only(top: 10),
+                child: Text("Hadist Pilihan",
+                    style: TextStyle(
+                        fontSize: 28,
+                        
+                        color: Colors.black,
+                        height: 2.0,
+                        fontWeight: FontWeight.bold))),
+            Container(
+                margin: EdgeInsets.only(top: 10, left: 200),
+                child: Text("more",
+                    textAlign: TextAlign.right,
+                    style: TextStyle(
+                      color: Colors.blue,
+                    )))
+          ]),
+          Container(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 20.0),
+              height: 300,
+              child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(30.0),
+                  children: <Widget>[
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.red, Colors.orange]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                     Text("1 Day Ago", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                    Text(
+                                        "Barang Temuan Enaknya Diapain Ya??",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("¬KYY", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.blue, Colors.blue]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                     Text("2 Day Ago", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                    Text(
+                                        "Dengan Alhamdulillah, hidup jadi chill",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("¬KYY", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                  ])),
+                         Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.purple, Colors.purple]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                     Text("2 Day Ago", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                    Text(
+                                        "Download PRO Version , You Will get Discount",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("¬KYY", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.network(
+                                        'https://pustakaibnuumar.com/wp-content/uploads/2015/12/Cover-Matan-Hadits-Arbain.gif',
+                                        height: 100),
+                                    Text('Hadits Arbain',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold)),
+                                  ])),
+                          
+                        ]),
+                  ])),
+              Row(children: <Widget>[
+            Container(
+                margin: EdgeInsets.only(top: 10),
+                child: Text("Poster Hadits",
+                    style: TextStyle(
+                        fontSize: 28,
+                        
+                        color: Colors.black,
+                        height: 2.0,
+                        fontWeight: FontWeight.bold))),
+            Container(
+                margin: EdgeInsets.only(top: 10, left: 200),
+                child: Text("more",
+                    textAlign: TextAlign.right,
+                    style: TextStyle(
+                      color: Colors.blue,
+                    ))),
+                Container(
+              color: Colors.white,
+              margin: EdgeInsets.symmetric(vertical: 20.0),
+              height: 300,
+              child: ListView(
+              scrollDirection: Axis.horizontal,
+              padding: EdgeInsets.all(30.0),
+                  children: <Widget>[
+                    Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                        children: [
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.red, Colors.orange]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                     Text("1 Day Ago", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                    Text(
+                                        "Barang Temuan Enaknya Diapain Ya??",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("¬KYY", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.blue, Colors.blue]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                     Text("2 Day Ago", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                    Text(
+                                        "Dengan Alhamdulillah, hidup jadi chill",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("¬KYY", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                  ])),
+                         Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                  gradient: LinearGradient(colors: [Colors.purple, Colors.purple]),
+                                  borderRadius: BorderRadius.circular(20.0),
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                     Text("2 Day Ago", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                    Text(
+                                        "Download PRO Version , You Will get Discount",
+                                        style: TextStyle(
+                                            fontSize: 18,
+                                            fontFamily: "serif",
+                                            color: Colors.white,
+                                            height: 2.0,
+                                            fontWeight: FontWeight.bold)),
+                                    Text("¬KYY", style: TextStyle( color: Colors.white, fontSize: 10)),
+                                  ])),
+                          Container(
+                              height: 210,
+                              width: 200,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                              ),
+                              margin: EdgeInsets.all(10.0),
+                              padding: EdgeInsets.all(10.0),
+                              child: Column(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Image.network(
+                                        'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/McDonald%27s_logo.svg/1200px-McDonald%27s_logo.svg.png',
+                                        height: 100),
+                                    Text('MCDONALDS',
+                                        style: TextStyle(
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.bold)),
+                                  ])),
+                          
+                        ]),
+                  ])),
+          ]),
+            
+            
+            
+            
+        ]),
+          bottomNavigationBar: BottomNavigationBar(
+
+                              items: [
+
+                               BottomNavigationBarItem(
+                                 backgroundColor: Colors.blue,
+
+                                 icon: Icon(Icons.home),
+
+                                 title: Text(''),
+                    
+                                  ),
+
+                                BottomNavigationBarItem(
+                                  backgroundColor: Colors.blue,
+
+                                  icon: Icon(Icons.create_new_folder),
+
+                                 title: Text('folder'),
+
+                                 ),
+
+                                BottomNavigationBarItem(
+                                  backgroundColor: Colors.blue,
+
+                                  icon: Icon(Icons.search),
+                    
+                                  title: Text('Search'),
+
+                                 ),
+                                 BottomNavigationBarItem(
+                                   backgroundColor: Colors.blue,
+
+                                 icon: Icon(Icons.headset_mic),
+
+                                 title: Text('Home'),
+                    
+                                  ),
+                                 BottomNavigationBarItem(
+                                   backgroundColor: Colors.blue,
+
+                                 icon: Icon(Icons.account_circle),
+
+                                 title: Text('Home'),
+                    
+                                  ),
+           
+
+                             ]),
+      ),
+    );
+  }
+}
